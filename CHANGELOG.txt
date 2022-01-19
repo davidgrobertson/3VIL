@@ -1,0 +1,118 @@
+June 18, 2020 Version 2.01
+---------------------------
+
+* TVIL_Trilogseries() in trilog.c rewritten to make it more efficient.
+  Thanks to Alexander Voigt for this.
+
+
+July 13, 2018 Version 2.0
+-------------------------
+
+* The TVIL_DATA struct has been eliminated; now only TVIL_RESULTs are
+  used. A single call to TVIL_Evaluate does all the work.
+  TVIL_SetParameters has been eliminated.
+
+* Permutations of arguments and functions that are allowed by the
+  symmetry of the basis functions are now implemented. See functions
+  TVIL_PermuteResult() and TVIL_InversePerm(), described in
+  README.txt.
+
+* A new evaluation method for 3-scale cases (00yzxx (case A), 0xxyzy
+  (case B), 0xyxzy (case C)), based on alternate differential
+  equations, is fully implemented. Such cases are auto-detected,
+  including permutations thereof that are allowed by the symmetry
+  properties of the basis functions. The user can force evaluation
+  according to the default procedure via a call to
+  TVIL_SetForceDefault, though this is recommended only for testing.
+
+* Evaluation of subsets of the basis functions (modes EFG and EF) are
+  now implemented. Functions TVIL_EvaluateEFG() and TVIL_EvaluateEF()
+  implement these modes, and are described in README.txt.  Sample
+  programs are provided that illustrate their use (sampleEFG.c and
+  sampleEF.c), and the test program can also be compiled to use either
+  mode if desired. See the Makefile for details.
+
+* Result printing simplified; there is now one set of routines,
+  TVIL_Print/WriteData, and print style (vanilla or Mathematica) is
+  controlled by TVIL_SetPrintStyle. Subset cases print automtically.
+
+* Code to determine the a parameter moved to a subroutine.
+
+* TVIL_SetParams* now returns a pointer to the function whose
+  parameters were set.
+
+* TVIL_GetFunctions and TVIL_GetBoldFunction work with subset cases.
+
+* Bugfix: any string starting with H is now valid for Huvwxyz when
+  calling TVIL_Get/BoldFunction().
+
+* Functions TVIL_d*dt() now take pointer-to-function as argument, not
+  a function.
+
+* Rebuilt TVIL_rk6 and TVIL_rk5 to allow arbitrary subsets of the
+  functions to be evaluated.
+
+* Added global U,V,W,X,Y,Z variables and associated logs; we now
+  evaluate clogs only once per Runge-Kutta stage. (Worth about 15%
+  speedup.)
+
+* Bugfix in Set_aParameter: local variables were masking the globals.
+
+* New function TVIL_TestDelta(), used to test whether Delta=0.
+
+* Function TVIL_Phi() updated to make it somewhat more resistant to
+  roundoff error in pathological cases where two of the arguments are
+  equal and the other two are extremely close to being equal (for
+  example, ./3vil 0.00000000001 0 2 1 1 1 1).
+
+* In TVIL_Atest() the test for TVIL_Phi() being small has been
+  relaxed.
+
+* In dilog.c, CLZcoeffs[] now local local rather than global.
+  Similarly changed trilog.c to make CLZcoeffs_trilog[] local rather
+  than global.
+
+* All global variables renamed with leading TVIL_ to avoid collisions.
+
+* Function TVIL_Fanalytic() added.
+
+* Function TVIL_ResetStepSizeParamDefaults() added.
+
+* Added subdirectories 3scaleA, 3scaleB, 3scaleC to the TestData
+  directory.
+
+July 30, 2016 Version 0.4
+-------------------------
+
+* Added GetFunctions (), with permutations on identifier strings
+  allowed
+* check of basecalc inputs for actual numericalness
+* simpler cHd1 root evaluation
+* a = 2*Max(u,v,w,x,y,z) now
+* I2 analytic functions now take complex mass^2 args
+* Put ReAxisOk and poleAt1 into the struct; evaluated in 
+  SetParameters
+* Added optimization logic for pole near t=1
+* I2 functions updated with latest Mathematica code; ordering problem
+  solved
+* Numerical I2 results replaced by analytic results at end of
+  evaluation
+
+
+July 15, 2016 Version 0.3
+-----------------------
+
+* New dHdt implemented
+
+
+July 1, 2016 Version 0.2
+-----------------------
+
+* t -> ln(1-t) implemented
+* All analytic functions added and debugged
+
+
+June 9, 2016 Version 0.1
+-----------------------
+
+* Basic functionality.

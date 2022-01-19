@@ -1,0 +1,68 @@
+(* 3VIL Version: 2.0 *)
+(* Evaluation method: Analytic *)
+u  = 0.000000000000;
+v  = 0.000000000000;
+w  = 6.000000000000;
+x  = 5.000000000000;
+y  = 0.000000000000;
+z  = 0.000000000000;
+qq = 3.000000000000;
+
+(* Basis Functions: *)
+Iuvx     = -16.268771141321007 + 0.0 I;
+Ixyz     = -16.268771141321007 + 0.0 I;
+Iuxy     = -16.268771141321007 + 0.0 I;
+Ivxz     = -16.268771141321007 + 0.0 I;
+Iuwz     = -17.993197276124619 + 0.0 I;
+Ivwy     = -17.993197276124619 + 0.0 I;
+Iuwy     = -17.993197276124619 + 0.0 I;
+Ivwz     = -17.993197276124619 + 0.0 I;
+Ivyz     =  0.0 + 0.0 I;
+Iwxy     = -16.258770369677361 + 0.0 I;
+Iuvz     =  0.0 + 0.0 I;
+Iuwx     = -16.258770369677361 + 0.0 I;
+Iuyz     =  0.0 + 0.0 I;
+Iwxz     = -16.258770369677361 + 0.0 I;
+Iuvy     =  0.0 + 0.0 I;
+Ivwx     = -16.258770369677361 + 0.0 I;
+
+Ewuxy    = -15.786404444340373 + 0.0 I;
+Evwxz    = -15.786404444340373 + 0.0 I;
+Euvyz    =  0.0 + 0.0 I;
+
+Fwuxy    =  3.1557072816447311 + 0.0 I;
+Fwvxz    =  3.1557072816447311 + 0.0 I;
+Fxuwy    = -1.8481026574909492 + 0.0 I;
+Fxvwz    = -1.8481026574909492 + 0.0 I;
+Fuvyz    =  ComplexInfinity;
+Fuwxy    =  ComplexInfinity;
+Fyuvz    =  ComplexInfinity;
+Fyuwx    =  ComplexInfinity;
+Fvuyz    =  ComplexInfinity;
+Fvwxz    =  ComplexInfinity;
+Fzuvy    =  ComplexInfinity;
+Fzvwx    =  ComplexInfinity;
+
+FBARwuxy = -8.1209455661369301 + 0.0 I;
+FBARwvxz = -8.1209455661369301 + 0.0 I;
+FBARxuwy = -11.039488879611833 + 0.0 I;
+FBARxvwz = -11.039488879611833 + 0.0 I;
+FBARuvyz =  0.0 + 0.0 I;
+FBARuwxy =  17.519472392233023 + 0.0 I;
+FBARyuvz =  0.0 + 0.0 I;
+FBARyuwx =  17.519472392233023 + 0.0 I;
+FBARvuyz =  0.0 + 0.0 I;
+FBARvwxz =  17.519472392233023 + 0.0 I;
+FBARzuvy =  0.0 + 0.0 I;
+FBARzvwx =  17.519472392233023 + 0.0 I;
+
+Gwuzvy   = -33.068322818883452 + 0.0 I;
+Gxuvyz   = -32.340214880754210 + 0.0 I;
+Guvxwz   = -23.506614504482794 + 0.0 I;
+Gyvwxz   = -23.506614504482794 + 0.0 I;
+Gvuxwy   = -23.506614504482794 + 0.0 I;
+Gzuwxy   = -23.506614504482794 + 0.0 I;
+
+Huvwxyz  = -3.2367248663844537 + 0.0 I;
+
+(* Total calculation time (s): 0.000000 *)
