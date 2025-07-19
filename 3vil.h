@@ -1,4 +1,4 @@
-#define TVIL_VERSION "2.01"
+#define TVIL_VERSION "2.02"
 
 /* General header file for the user API and all 3VIL types.  This file
    must be included in all applications of 3VIL.  */

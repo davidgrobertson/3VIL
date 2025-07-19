@@ -1,4 +1,4 @@
-/* 3VIL v2.01 */
+/* 3VIL v2.02 */
 
 /* General header file for the user API and all 3VIL types.  This file
    should be included in all C++ applications wishing to use 3VIL. */

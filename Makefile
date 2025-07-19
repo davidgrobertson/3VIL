@@ -40,7 +40,8 @@
 ####################################################################
 ####################################################################
 
-CFLAGS	= $(TVIL_RESCALE) $(TVIL_SIZE) $(TVIL_OPT)
+# -fcommon added after gcc 10:
+CFLAGS	= $(TVIL_RESCALE) $(TVIL_SIZE) $(TVIL_OPT) -fcommon
 LDFLAGS	= 
 LIBS	= -L. -l3vil -lm
 ARFLAGS = -rus

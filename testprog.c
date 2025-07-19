@@ -71,11 +71,14 @@ TVIL_REAL TVIL_GetReal ()
   const char inf[] = "ComplexInfinity;";
   char * p = s;
 
+  /* Don't do anything with this, but avoids a compiler warning. */
+  int fscanf_success;
+
   while (fgetc (fp) != '=')
     ;
 
   /* This automatically skips leading white space: */
-  fscanf (fp, "%s", s);
+  fscanf_success = fscanf (fp, "%s", s);
 
   /* Strip trailing semicolon: */
   p[strlen(p) - 1] = 0;
@@ -102,18 +105,21 @@ TVIL_COMPLEX TVIL_GetComplex ()
   char         s[100];
   const char   inf[] = "ComplexInfinity;";
 
+  /* Don't do anything with this, but avoids a compiler warning. */
+  int fscanf_success;
+
   while (fgetc (fp) != '=')
     ;
 
   /* This automatically skips leading white space: */
-  fscanf (fp, "%s", s);
+  fscanf_success = fscanf (fp, "%s", s);
 
   if (strcmp (s, inf) == 0)
     val = TVIL_Infinity;
   else
     {
       val = (TVIL_COMPLEX) strtold (s, (char **) NULL);
-      fscanf (fp, " + %Lf I;", &im);
+      fscanf_success = fscanf (fp, " + %Lf I;", &im);
       val += I * im;
     }
   return val;

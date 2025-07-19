@@ -24,21 +24,21 @@ Northern Illinois University
 DeKalb, IL 60115
 USA
 
-D.G. Robertson [drobertson AT otterbein.edu]
-Department of Physics
-Otterbein University
-Westerville, OH 43081
+D.G. Robertson [drober23 AT nd.edu]
+Department of Physics and Astronomy
+University of Notre Dame
+Notre Dame, IN 46556
 USA
 
 3VIL is available from
 
-       http://www.niu.edu/spmartin/3vil
-       http://faculty.otterbein.edu/DRobertson/3vil
+    https://github.com/davidgrobertson/3VIL
+    https://www.niu.edu/spmartin/3VIL
 
 To cite this program, please reference the paper:
 
 "Evaluation of the general 3-loop vacuum Feynman integral,"
-by S.P. Martin and D.G. Robertson, [arXiv:xxxx.yyyyy].
+by S.P. Martin and D.G. Robertson, [arXiv:1610.07720].
 
 **************************************************************************
 

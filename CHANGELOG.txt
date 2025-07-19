@@ -1,3 +1,11 @@
+July 15, 2025 Version 2.02
+---------------------------
+
+* Makefile changed to add -fcommon to CFLAGS
+
+* In testprog.c, added a return value for fscanf(), to avoid compiler warnings.
+
+
 June 18, 2020 Version 2.01
 ---------------------------
 

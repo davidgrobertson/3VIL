@@ -43,10 +43,10 @@ Northern Illinois University
 DeKalb, IL 60115
 USA
 
-D.G. Robertson [drobertson AT otterbein.edu]
-Department of Physics
-Otterbein University
-Westerville, OH 43081
+D.G. Robertson [drober23 AT nd.edu]
+Department of Physics and Astronomy
+University of Notre Dame
+Notre Dame, IN 46556
 USA
 
 To cite this program, please reference the paper (referred to in this
@@ -67,10 +67,10 @@ and referred to in this document as [MR05].
 
 3VIL is available from:
 
-    http://www.niu.edu/spmartin/3VIL
-    http://faculty.otterbein.edu/drobertson/3VIL
+    https://github.com/davidgrobertson/3VIL
+    https://www.niu.edu/spmartin/3VIL
 
-Version number: 2.01
+Version number: 2.02
 
 
 ************************************************************************
