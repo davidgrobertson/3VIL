@@ -4,7 +4,7 @@
 
 The authors are [Stephen P. Martin](https://www.niu.edu/spmartin/) and [David G. Robertson](https://physics.nd.edu/people/faculty/david-robertson/). The paper announcing `3VIL`, and containing the calculations on which it is based, is available from the arXiv.org preprint archive as [1610.07720](https://arxiv.org/abs/1610.07720).
 
-The source code for the current version (v2.02, July 15, 2025) of the program can be downloaded [here](https://github.com/davidgrobertson/3VIL/releases/tag/v2.01) as a zip or tar.gz archive. This unpacks into a single directory, which contains the C source files and a README.txt file with complete instructions for building and using 3VIL. Note that v2.0 involves a significant update and some restructuring compared to v1.0. For more information, see the README.txt and CHANGELOG.txt files.
+The source code for the current version (v2.02, July 15, 2025) of the program can be downloaded [here](https://github.com/davidgrobertson/3VIL/releases/tag/v2.02) as a zip or tar.gz archive. This unpacks into a single directory, which contains the C source files and a README.txt file with complete instructions for building and using 3VIL. Note that v2.0 involves a significant update and some restructuring compared to v1.0. For more information, see the README.txt and CHANGELOG.txt files.
 
 This material is based upon work supported by the National Science Foundation under grants PHY-1417028 and PHY-1719273. The work of DGR was supported in part by a grant from the Ohio Supercomputer Center.
 
